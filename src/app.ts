@@ -26,5 +26,14 @@ app.get('/api/health', (_: Request, res: Response) => {
   })
 })
 
+// GET /api/users
+app.get('/api/users', (_: Request, res: Response) => {
+  const users = [
+    { id: 1, name: 'Bak WAVE' },
+    { id: 2, name: 'Bak WAVE E3 MAK' },
+  ]
+  res.json(users)
+})
+
 // Start server
 app.listen(port, () => console.log(`Application is running on port ${port}`))
