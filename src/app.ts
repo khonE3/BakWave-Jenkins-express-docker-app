@@ -8,7 +8,7 @@ const port: number = 3000
 // GET /
 app.get('/', (_: Request, res: Response) => {
   res.json({
-    message: 'Bak Wavee E3มาก เด้อExpress + TypeScript!'
+    message: 'Bak Wave E3มาก เด้อExpress + TypeScript!'
   })
 })
 
